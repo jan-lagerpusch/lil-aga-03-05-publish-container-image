@@ -100,7 +100,7 @@ jobs:
     needs: build
     steps:
       - run: |
-          docker run ghcr.io/jan-lagerpusch/lil-aga-03-05-publish-container-image:lil-aga-03-05-publish-container-image:main
+          docker run ghcr.io/jan-lagerpusch/lil-aga-03-05-publish-container-image:main
           grep "container"
           
     
