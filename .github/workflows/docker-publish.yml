@@ -101,7 +101,7 @@ jobs:
     steps:
       - name: "Test docker container output"
         run: |
-          docker run ghcr.io/jan-lagerpusch/lil-aga-03-05-publish-container-image:main | grep "container"
+          docker run ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main | grep "container"
           
     
     
