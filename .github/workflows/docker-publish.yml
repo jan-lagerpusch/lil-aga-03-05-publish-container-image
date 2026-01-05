@@ -101,7 +101,7 @@ jobs:
     steps:
       - name: "Test docker container output"
         run: |
-          docker run ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main | grep "container"
+          docker run ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main | grep "container" && echo "TEST PASSED!"
           
     
     
