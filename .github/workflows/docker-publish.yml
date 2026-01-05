@@ -99,7 +99,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - run: |
+      - name: "Test docker container output"
+        run: |
           docker run ghcr.io/jan-lagerpusch/lil-aga-03-05-publish-container-image:main | grep "container"
           
     
